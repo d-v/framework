@@ -19,9 +19,18 @@ uavcan_getnodeinfo_server \
 uavcan_beginfirmwareupdate_server \
 uavcan_allocatee \
 uavcan_restart \
-freemem_check
+uavcan_debug \
+freemem_check \
+param \
+flash
 
 MESSAGES_ENABLED = \
-uavcan.protocol.debug.LogMessage
+uavcan.protocol.debug.LogMessage \
+uavcan.protocol.debug.KeyValue \
+uavcan.tunnel.Broadcast
+
+USE_LTO = no
+
+USE_OPT = -O0
 
 include ../../include.mk
