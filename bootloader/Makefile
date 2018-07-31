@@ -33,6 +33,10 @@ LOAD_REGION = bl
 
 UDEFS += -DTARGET_BOOTLOADER
 
+USE_LTO = no
+
+USE_OPT = -Os -g
+
 include ../include.mk
 
 upload: build/$(BOARD)/bootloader.elf
