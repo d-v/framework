@@ -18,6 +18,8 @@
 #define CAN_EXPIRE_WORKER_THREAD                        can_thread
 #define UAVCAN_RX_WORKER_THREAD                         can_thread
 
+#define MODULE_PARAM_ENABLED
+
 //
 // Configure topic groups
 //
